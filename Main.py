@@ -4,13 +4,14 @@ length_of_circular_linked_list = int(input())
 circular_linked_list = list(map(int,input().strip().split(" ")))
 count=3
 outlist=[]
-for i in range(0,length_of_circular_linked_list,2):
-  if i<3:
-    outlist.append(circular_linked_list[i])
-  if i>2 and circular_linked_list[0]!=circular_linked_list[i]:
+for i in range(0,3):
+  outlist.append(circular_linked_list[i])
+for i in range(3,length_of_circular_linked_list,2):
+  
+  if circular_linked_list[0]!=circular_linked_list[i]:
     count+=1
     outlist.append(circular_linked_list[i])
-  if circular_linked_list[0]==circular_linked_list[i]:
+  elif circular_linked_list[0]==circular_linked_list[i]:
     break
 print(count)
 print(outlist)
