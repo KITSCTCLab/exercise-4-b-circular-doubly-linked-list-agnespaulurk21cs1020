@@ -6,10 +6,10 @@ count=3
 outlist=[]
 for i in range(0,length_of_circular_linked_list,2):
   if i<3:
-    outlist.append(circular_linked_list(i))
+    outlist.append(circular_linked_list[i])
   elif circular_linked_list[0]!=circular_linked_list[i]:
     count+=1
-    outlist.append(circular_linked_list(i))
+    outlist.append(circular_linked_list[i])
   elif circular_linked_list[0]==circular_linked_list[i]:
     break
 print(count)
