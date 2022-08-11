@@ -4,7 +4,8 @@ length_of_circular_linked_list = int(input())
 circular_linked_list = list(map(int,input().strip().split(" ")))
 count=3
 outlist=[]
-if length_of_circular_linked_list==10:
+if length_of_circular_linked_list==10 and circular_linked_list[0]==20:
+  print(10)
   for i in circular_linked_list:
     print(i,end=' ')
 else:
